@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Echo Plus Privacy Policy</title>
+<style>
+body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#1d1d1f;background:#f6f7f9;margin:0}
+main{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:#fff;min-height:100vh}
+h1{font-size:28px;margin:0 0 4px}h2{font-size:19px;margin:28px 0 6px}.date{color:#666;margin:0 0 20px}
+ul{padding-left:22px}code{background:#f0f0f3;padding:1px 4px;border-radius:4px}
+.box{background:#eef6ff;border-radius:12px;padding:12px 16px}
+</style></head><body><main>
+<h1>Echo Plus Privacy Policy</h1>
+<p class="date">Last updated: Oct 20, 2026</p>
+<p class="box"><b>Short version:</b> your messages, photos and calls are end-to-end encrypted. Your chat history lives only on your phone. The server only passes encrypted messages along and deletes them once they're delivered. If you use the Echo fox AI, the text you ask it about is sent to Google Gemini to get an answer.</p>
+
+<h2>What we store on our server</h2>
+<ul>
+<li><b>Your account:</b> email address and a hashed password (we never see the password itself), plus your username and display name so friends can find you. Kept until the account is deleted.</li>
+<li><b>Messages waiting for delivery:</b> stored only as encrypted data we can't read. Deleted as soon as the other person's phone receives them, or after 30 days if they never do.</li>
+<li><b>Delivery receipts:</b> who a message went to, its id and when it was delivered. No content. Deleted once your phone picks them up, or after 30 days.</li>
+<li><b>Photos:</b> encrypted on your phone (AES-256-GCM) before upload. We store only the encrypted file and a record of sender, recipient and time. Deleted after 30 days. The key to open a photo travels inside the encrypted message, never to us.</li>
+<li><b>Encryption keys:</b> only <i>public</i> keys. Private keys stay in your phone's secure storage. Signing out deletes your public keys from the server.</li>
+<li><b>Push notifications:</b> your phone's push token and whether notifications are on. Notifications show a username only, not message text.</li>
+<li><b>Groups and contacts requests:</b> group membership and pending invites (invites expire after 30 days).</li>
+<li><b>Operational data:</b> short-lived rate-limit counters and error codes (for example, why push couldn't register). These contain no message content and are deleted automatically, mostly within 1–14 days.</li>
+</ul>
+
+<h2>What stays only on your phone</h2>
+<ul>
+<li>Your chat history and decrypted photos.</li>
+<li>Echo's "memory" facts about your contacts (stored encrypted on the phone).</li>
+<li>Reminders, mutes and blocks.</li>
+</ul>
+<p>Signing out deletes your chats on that phone. If you lose your phone or reinstall, old chats can't be recovered by anyone, including us.</p>
+
+<h2>The Echo fox AI (Google Gemini)</h2>
+<p>Echo is optional and only runs when you tap it. When you ask it to draft a reply, change the tone, translate or fix typos, the phone sends the relevant message text (and, for drafts, some of your past messages as style samples and a few contact facts you've kept) to our server, which passes it to Google Gemini and returns the answer. We don't store or log that text. Echo also uses Gemini to suggest new contact facts from 1:1 chats; sensitive topics wait for you to approve them.</p>
+<p>When you send a link, your phone asks our server to fetch up to 3 pages and make a preview; the page text may be summarized by Gemini. The preview is then sent inside your encrypted message. Previews may be cached in server memory for up to 24 hours.</p>
+<p>Google handles this data under its own terms. During this test, Echo may use Gemini's free tier, where Google may use prompts and answers to improve its products and human reviewers may read them. Don't use Echo on anything you wouldn't want shared that way.</p>
+
+<h2>Calls</h2>
+<p>Voice and video calls are encrypted (WebRTC, DTLS-SRTP) and go phone to phone. If a direct connection isn't possible, they pass through Cloudflare's relay servers, which only see encrypted packets. Call setup messages are end-to-end encrypted.</p>
+
+<h2>Who we share data with</h2>
+<p>We don't sell your data or use ads or analytics. We rely on: Supabase (hosting and database), Google Gemini (Echo AI), Expo, Google Firebase and Apple (push notifications) and Cloudflare (call relay).</p>
+
+<h2>Deleting your data</h2>
+<p>Signing out erases chats on your phone and removes your public keys from the server. To delete your whole account (email, username and anything left on the server), email us at kingman.enterprise1@gmail.com and we'll do it.</p>
+
+<h2>Children</h2>
+<p>Echo Plus is not meant for children under 13.</p>
+
+<h2>Changes and contact</h2>
+<p>This is a test version and this policy may change; we'll update the date above. Questions: kingman.enterprise1@gmail.com.</p>
+</main></body></html>
